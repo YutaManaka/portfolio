@@ -1,0 +1,70 @@
+ubuntu パブリックIP
+18.182.147.168
+
+docker-composeの実行
+root@ip:/home/ubuntu＃ /usr/local/bin/docker-compose
+
+Githubリポジトリのアドレス
+https://github.com/YutaManaka/portfolio.git
+
+Gitユーザー名
+YutaManaka
+Gitメルアド
+y2manaka@gmail.com
+
+Githubユーザー名
+YutaManaka
+Githubパスワード
+kearney2004
+
+
+ローカルの作業フォルダ
+cd Downloads/portfolio
+
+/Users/yuuta_buppan/.ssh/
+
+パブリックIP
+54.199.78.50
+
+プライベートIP
+172.31.35.74
+
+グローバルIP
+150.249.118.113
+
+mySQLパスワード
+manaka
+
+ローカルmySQL情報
+サーバ：mysql //これは固定
+ユーザ名:default
+パスワード:secret
+
+ユーザー名
+yuuta_buppan
+
+AWSにログイン
+ssh -i ~/.ssh/portfolio_ec2.pem ec2-user@54.199.78.50
+ssh -i ~/.ssh/portfolio_ec2.pem ubuntu@54.199.78.50
+
+管理者権限(#になるやつ)
+sudo su
+
+docker ID
+y2manaka
+
+dockerパスワード
+kearney2004
+
+docker-compose exec workspace bash
+
+
+cd /var/www/html/ec
+
+mv ~/Desktop/portfolio_ec2.pem ~/.ssh
+chmod 400 ~/.ssh/portfolio_ec2.pem
+ssh -i ~/.ssh/portfolio_ec2.pem ec2-user@54.199.78.50
+
+echo "export PATH=/home/yuuta_buppan/.config/composer/vendor/bin:$PATH" >> ~/.bash_profile
+source ~/.bash_profile
+
