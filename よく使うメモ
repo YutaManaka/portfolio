@@ -1,6 +1,10 @@
 ubuntu パブリックIP
 18.182.147.168
 
+http://18.182.147.168/public/
+
+http://localhost
+
 docker-composeの実行
 root@ip:/home/ubuntu＃ /usr/local/bin/docker-compose
 
@@ -17,6 +21,10 @@ YutaManaka
 Githubパスワード
 kearney2004
 
+Git
+
+git commit -m "コメント"
+git push -f origin master
 
 ローカルの作業フォルダ
 cd Downloads/portfolio
