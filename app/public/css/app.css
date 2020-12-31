@@ -10949,3 +10949,21 @@ img.incart {
   margin: 20px auto;
 }
 
+.nav-link {
+  color: #ffcc99;
+}
+
+.navbar navbar-expand-md navbar-light shadow-sm {
+  background-color: #0092b3;
+  color: #fefefe;
+}
+
+.navbar-brand {
+  color: #fefefe;
+  font-size: 1.4em;
+}
+
+#navbarDropdown {
+  color: #fefefe;
+}
+

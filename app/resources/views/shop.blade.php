@@ -15,7 +15,7 @@
                                <div class="mycart_box">
                                    {{$stock->name}} <br>
                                    {{$stock->fee}}円<br>
-                                   <img src="/image/{{$stock->imgpath}}" alt="" class="incart" >
+                                   <img src="/img/{{$stock->imgpath}}" alt="" class="incart" >
                                    <br>
                                    {{$stock->detail}} <br>
 
@@ -29,10 +29,6 @@
 
                                     {{-- ここまで --}}
                                </div>
-
-                                {{-- 追加 --}}
-                               <a class="text-center" href="/">商品一覧へ</a>
-                                {{-- ここまで --}}
 
                            </div>
                        @endforeach
