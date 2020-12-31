@@ -18,7 +18,7 @@ Route::get('/', function () {
 */
 Route::get('/', 'ShopController@index');
 
-Route::get('/mycart', 'ShopController@myCart');
+Route::get('/mycart', 'ShopController@myCart')->middleware('auth');
 
 Auth::routes();
 
