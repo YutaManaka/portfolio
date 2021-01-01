@@ -24,3 +24,5 @@ Route::post('/mycart', 'ShopController@addMycart');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::POST('/cartdelete','ShopController@deleteCart');
