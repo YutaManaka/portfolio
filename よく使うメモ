@@ -1,9 +1,20 @@
+検証用アドレス
+ローカル
+http://127.0.0.1/
+http://localhost:8081/
+
+AWS
+http://18.182.147.168/public/
+
+
+
 ubuntu パブリックIP
 18.182.147.168
 
 http://18.182.147.168/public/
 
 http://localhost
+http://127.0.0.1/
 
 docker-composeの実行
 root@ip:/home/ubuntu＃ /usr/local/bin/docker-compose
@@ -21,13 +32,42 @@ YutaManaka
 Githubパスワード
 kearney2004
 
-Git
+Github→AWSへ反映(AWS側で操作)
+cd portfolio
+git pull origin master
+できなかった場合は下記
+git fetch origin master
+git reset --hard origin/master
 
-git commit -m "コメント"
-git push -f origin master
 
 ローカルの作業フォルダ
 cd Downloads/portfolio
+cd Downloads/portfolio/app
+
+(ローカル)コンテナ内でphpコマンド使う場合
+cd Downloads/portfolio/laradock
+docker-compose exec workspace bash
+php artisan serveなどなど
+
+(AWS)migrateする方法
+cd portfolio/laradock
+sudo docker-compose exec workspace bash
+php artisan migrate
+
+Docker起動法
+cd Downloads/portfolio/laradock
+docker-compose restart
+もしくは
+docker-compose up -d nginx mysql phpmyadmin
+※起動しなかったら、dockerアプリの再起動(タスクマネージャーによる強制終了)をトライ
+
+AWSでdocker起動
+cd portfolio/laradock
+sudo docker-compose restart
+
+
+nginxが起動しない時
+https://qiita.com/ramen_2ro/items/5be99c1295b1dc722dea#nginx%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC
 
 /Users/yuuta_buppan/.ssh/
 
@@ -75,4 +115,6 @@ ssh -i ~/.ssh/portfolio_ec2.pem ec2-user@54.199.78.50
 
 echo "export PATH=/home/yuuta_buppan/.config/composer/vendor/bin:$PATH" >> ~/.bash_profile
 source ~/.bash_profile
+
+
 
