@@ -1,3 +1,7 @@
+最終的な公開アドレス
+http://18.182.147.168/
+http://ec.yutaka-perfume.com/
+
 検証用アドレス
 ローカル
 http://127.0.0.1/
@@ -116,5 +120,19 @@ ssh -i ~/.ssh/portfolio_ec2.pem ec2-user@54.199.78.50
 echo "export PATH=/home/yuuta_buppan/.config/composer/vendor/bin:$PATH" >> ~/.bash_profile
 source ~/.bash_profile
 
+172800
+
+SES情報
+ses-smtp-user.20210101-191046
+SMTP ユーザー名:
+AKIATR45YLVCQ6E3MQFQ
+SMTP パスワード:
+BApsfeamesG9tVV0jkrHSOh/0DSBzOuBgEW5AeLbup1j
 
 
+アクセスキー ID
+AKIATR45YLVC5T3KGRRZ
+シークレットアクセスキー
+9JnFzcIswLA0vqsM5pP1seu8a3/fyfFwSv/xTSBy
+
+Mail::raw('テストです', function($message) { $message->to('y2manaka@gmail.com')->subject('テスト送信'); });
