@@ -83,7 +83,7 @@ http://18.182.147.168/
 
 
 # Fragrance Shop Lara
-Fragrance Shop Lara is a simple EC site where you can choose the fragrance you like.
+Fragrance Shop Lara is a simple shopping site where you can choose the fragrance you like.
 It is responsive page, so that you can check in your smartphone.
 ![top](https://user-images.githubusercontent.com/54618797/104148917-8ce91a80-5417-11eb-9184-5308d8bb547f.png)
 
