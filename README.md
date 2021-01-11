@@ -1,3 +1,5 @@
+English follows Japanese.
+
 # 香水ShopLara
 香水ShopLaraは、あなたの好きな香水を購入できる、シンプルなECサイトです。
 レスポンシブ対応しているのでスマホからもご確認いただけます。
@@ -79,7 +81,84 @@ http://18.182.147.168/
 - https://laraweb.net/knowledge/7063/
 - https://laraweb.net/knowledge/7083/
 
-![AWS EN](https://user-images.githubusercontent.com/54618797/104154049-40a5d680-5427-11eb-8602-a3b966509783.jpg)
 
+# Fragrance Shop Lara
+Fragrance Shop Lara is a simple EC site where you can choose the fragrance you like.
+It is responsive page, so that you can check in your smartphone.
+![top](https://user-images.githubusercontent.com/54618797/104148917-8ce91a80-5417-11eb-9184-5308d8bb547f.png)
+
+If you are in a hurry, please use test mailaddress and password below to log in.
+- mail address:example@test.com
+- password:test0123
+
+## URL
+http://18.182.147.168/
+
+## Dependency
+- Language/Framework
+  - PHP 7.0.33 / Laravel 6.20.8
+- Database
+  - MySQL
+- Development environment
+  - Docker for Mac
+    - Laradock
+- Production environment
+  - AWS
+    - VPC
+    - EC2
+    - SES
+- Version control
+  - Github
+
+## Diagram
+![AWS EN](https://user-images.githubusercontent.com/54618797/104154049-40a5d680-5427-11eb-8602-a3b966509783.jpg)
 ![Frame EN](https://user-images.githubusercontent.com/54618797/104154356-143e8a00-5428-11eb-9d1f-8b5733e88987.jpg)
 
+## Function
+1. Sign in, Log in, Log out
+2. Cart
+    - "Add cart"
+    - "Delete from your cart"
+    - Display total number and price of items
+3. Purchase
+    - Send a confirmation email
+
+![cart](https://user-images.githubusercontent.com/54618797/104149739-c2433780-541a-11eb-8827-2cb743efe44e.png)
+↑When you click "Add cart" button in the top page, you will see your cart page.
+
+![checkout](https://user-images.githubusercontent.com/54618797/104149743-c5d6be80-541a-11eb-83a5-adcd7478dd47.png)
+↑When you click "Purchase" button in your cart page, you will see check out page and get an confirmation email.
+
+![email](https://user-images.githubusercontent.com/54618797/104149870-3ed61600-541b-11eb-83a8-80c6496ebfc9.png)
+↑The email confirms your name, item name, and price.
+
+## Reference
+### 1.Local environment construction
+- Git install https://tracpath.com/bootcamp/git-install-to-mac.html
+- Docker install https://qiita.com/kurkuru/items/127fa99ef5b2f0288b81
+- Laradock and Laravel install https://qiita.com/mukae_tech/items/24709085948a6d707da3
+- PHP version up https://ocws.jp/blog/i-raised-my-macs-php-version-to-7-3/
+### 2.AWS configuration
+- VPC configration https://laraweb.net/tutorial/6605/
+- EC2 instance configration https://laraweb.net/tutorial/6637/
+- Elastic IP setting https://laraweb.net/tutorial/6661/
+### 3.Github register
+- https://laraweb.net/environment/6516/
+### 4.AWS environment construction
+- SSH log in https://laraweb.net/tutorial/6676/
+- Git/Docker/Docker Compose install https://laraweb.net/tutorial/6694/
+- Git clone & Docker configration https://laraweb.net/tutorial/6731/
+  - https://qiita.com/Potof_/items/c75eba9cfa72819506de
+  - https://www.virment.com/how-to-fix-couldnt-connect-to-docker-daemon/
+- Laravel configration https://laraweb.net/tutorial/6746/
+### 5.Git usage
+issue　→　branch　→ pullrequest　→ merge
+- https://colorfree-map.com/git-issue-myself
+- https://qiita.com/kujila_shiro/items/c26c8e0ab1a3ebd114d8
+### 6.EC site development
+- https://note.com/mukae9/n/n12cc13fd4f90?magazine_key=mf7a8ea438ba1
+- https://qiita.com/neneta0921/items/f99fc0d2c6e9600604e7
+### 7.Amazon SES
+- https://laraweb.net/knowledge/7012/
+- https://laraweb.net/knowledge/7063/
+- https://laraweb.net/knowledge/7083/
